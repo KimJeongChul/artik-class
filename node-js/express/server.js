@@ -8,4 +8,4 @@ app.get("/", function(request, response) {
 	response.send("Hello");
 });
 
-app.listen(8080, localhost);
+app.listen(8080, '127.0.0.1');
