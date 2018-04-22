@@ -6,7 +6,7 @@ app.use(express.static(__dirname+"/public"));
 
 app.get("/", function(request, response) {
 	fs.readFile('index.html', function(error, data) {
-		res.writeHead(200, {'Content-Type': 'text/html'});
+		response.writeHead(200, {'Content-Type': 'text/html'});
 		response.end(data);
 	});
 });
